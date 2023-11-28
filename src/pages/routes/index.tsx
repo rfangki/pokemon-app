@@ -19,7 +19,7 @@ const Routes = () => {
       element: <Mypokemon />,
     },
     {
-      path: "/battle",
+      path: "/battle/:pokeId",
       element: <Battle />,
     },
   ]);

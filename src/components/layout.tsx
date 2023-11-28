@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import Header from "./header";
 import Footer from "./footer";
+import Header from "./header";
+import { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
@@ -9,11 +9,13 @@ interface Props {
 const Layout = (props: Readonly<Props>) => {
   const { children } = props;
   return (
-    <div>
-      <Header />
-      <div>{children}</div>
-      <Footer />
-    </div>
+    <main className="flex justify-center bg-slate-900 h-screen">
+      <div className="layout-container min-w-full max-w-full bg-white dark:bg-neutral-800 md:min-w-[480px] md:max-w-[480px] flex flex-col">
+        <Header />
+        <div className="flex-grow overflow-auto">{children}</div>
+        <Footer />
+      </div>
+    </main>
   );
 };
 

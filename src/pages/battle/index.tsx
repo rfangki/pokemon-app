@@ -63,7 +63,7 @@ const Battle = () => {
   return (
     <Layout>
       {poke && (
-        <div className="grid h-full w-full grid-flow-col grid-rows-2 bg-[url('..\assets\background.png')] bg-cover bg-center bg-repeat">
+        <div className="grid h-full w-full grid-flow-col grid-rows-2 bg-[url('..\assets\bground.png')] bg-cover bg-center bg-repeat">
           <div className="grid place-content-between justify-self-center">
             <div className="rounded-2xl border border-black shadow-lg shadow-black dark:border-white m-3 p-5 bg-green-900">
               <p className="text-center font-arcade text-xs tracking-wide text-white">Wild {pokeId} appear</p>
